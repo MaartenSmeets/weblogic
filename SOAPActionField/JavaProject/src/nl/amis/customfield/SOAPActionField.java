@@ -1,15 +1,9 @@
-package javaproject;
+package nl.amis.customfield;
 
 //import java.io.PrintWriter;
 //import java.io.StringWriter;
-import org.apache.http.HeaderElement;
+
 import org.apache.http.entity.ContentType;
-
-
-import org.apache.http.message.BasicHeader;
-
-import org.apache.http.message.BasicHeaderValueParser;
-
 import weblogic.servlet.logging.CustomELFLogger;
 import weblogic.servlet.logging.FormatStringBuffer;
 import weblogic.servlet.logging.HttpAccountingInfo;
