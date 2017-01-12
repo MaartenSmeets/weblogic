@@ -1,4 +1,4 @@
-package nl.amis.customfield;
+package javaproject;
 
 //import java.io.PrintWriter;
 //import java.io.StringWriter;
@@ -22,7 +22,7 @@ public class SOAPActionField implements CustomELFLogger {
 
     @Override
     public void logField(HttpAccountingInfo metrics, FormatStringBuffer buff) {
-        String addthis = "";
+        String addthis = null;
         try {
             //first try SOAP 1.1 HTTP header SOAPAction
             //System.out.println("SOAPActionField: getHeader");
@@ -52,7 +52,7 @@ public class SOAPActionField implements CustomELFLogger {
             //PrintWriter pw = new PrintWriter(sw);
             //e.printStackTrace(pw);
             //System.out.println("SOAPActionField: "+sw.toString());
-            addthis = "";
+            addthis = null;
         }
         //System.out.println("SOAPActionField: Returning: "+addthis);
         buff.appendValueOrDash(addthis);
